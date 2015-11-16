@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="Test_16thNov" type="DataService" springFile="Test_16thNov.spring.xml">
+    <operation operationType="nativequery" name="test">
+        <return typeRef="Test_16thNovtestrtnType" isList="false"/>
+    </operation>
+    <dataobjects>
+        <dataobject javaType="com.mobile_16thnov.test_16thnov.Table2">
+            <element name="id" typeRef="com.mobile_16thnov.test_16thnov.Table2Id" isList="false" allowNull="false"/>
+            <element name="table1" typeRef="com.mobile_16thnov.test_16thnov.Table1" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="com.mobile_16thnov.test_16thnov.Table2Id">
+            <element name="column2" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="com.mobile_16thnov.test_16thnov.Table1">
+            <element name="id" typeRef="com.mobile_16thnov.test_16thnov.Table1Id" isList="false" allowNull="false"/>
+            <element name="column3" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="table2s" typeRef="com.mobile_16thnov.test_16thnov.Table2" isList="true" allowNull="true"/>
+        </dataobject>
+        <dataobject javaType="com.mobile_16thnov.test_16thnov.Table1Id">
+            <element name="column2" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+        </dataobject>
+        <dataobject javaType="Test_16thNovtestrtnType">
+            <element name="COLUMN2" typeRef="java.lang.Integer"/>
+            <element name="ID" typeRef="java.lang.Integer"/>
+        </dataobject>
+    </dataobjects>
+</service>

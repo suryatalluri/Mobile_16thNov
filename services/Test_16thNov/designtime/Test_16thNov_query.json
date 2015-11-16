@@ -1,0 +1,1 @@
+{"name":"Test_16thNov","description":"Queries for Test_16thNov","queries":[{"name":"test","query":"select * from TABLE1","comment":"","description":null,"nativeSql":true,"returnsSingleResult":false,"update":false,"queryParams":[],"outputType":null}]}

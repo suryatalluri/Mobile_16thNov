@@ -1,1 +1,0 @@
-{"name":"hrdb","description":"Queries for hrdb","queries":[{"name":"test","query":"select * from Employee","comment":"","description":null,"nativeSql":true,"returnsSingleResult":false,"update":false,"queryParams":[],"outputType":null}]}
